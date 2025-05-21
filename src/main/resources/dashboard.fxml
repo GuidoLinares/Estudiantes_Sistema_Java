@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.geometry.Insets?>
+<?import java.lang.String?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gm.Estudiantes.ui.EstudiantesDashboardUIController">
+    <children>
+        <VBox fx:id="sidebar" alignment="TOP_CENTER" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" styleClass="sidebar-panel">
+            <children>
+                <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/school_icon.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="School UI" textFill="WHITE" style="-fx-font-size: 24px; -fx-font-weight: bold;">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+
+                <Separator prefWidth="200.0" style="-fx-background-color: rgba(255, 255, 255, 0.3);" />
+
+                <VBox spacing="10.0" alignment="TOP_LEFT" VBox.vgrow="ALWAYS">
+                    <padding>
+                        <Insets top="20.0" left="10.0" right="10.0" />
+                    </padding>
+                    <children>
+                        <Button onAction="#showDashboardPanel" graphicTextGap="10.0" prefHeight="40.0" prefWidth="180.0" styleClass="sidebar-button" text="Dashboard">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@icons/dashboard_icon.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                        <Button onAction="#showEstudiantesPanel" graphicTextGap="10.0" prefHeight="40.0" prefWidth="180.0" styleClass="sidebar-button" text="Estudiantes">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@icons/student_icon.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                        <Button onAction="#showReportsPanel" graphicTextGap="10.0" prefHeight="40.0" prefWidth="180.0" styleClass="sidebar-button" text="Reportes">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@icons/report_icon.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+
+        <AnchorPane fx:id="contentArea" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" style="-fx-background-color: #f0f2f5;">
+            <padding>
+                <Insets top="70.0" />
+            </padding>
+        </AnchorPane>
+
+        <HBox alignment="CENTER_RIGHT" prefHeight="70.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-width: 0 0 1px 0;">
+            <children>
+                <ImageView fx:id="userAvatar" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/user_avatar.png" />
+                    </image>
+                    <clip>
+                        <Circle radius="15" centerX="15" centerY="15" />
+                    </clip>
+                    <HBox.margin>
+                        <Insets right="20.0" /> </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+
+    </children> <stylesheets>
+    <String fx:value="@style.css" />
+</stylesheets>
+
+</AnchorPane>

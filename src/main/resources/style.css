@@ -1,0 +1,148 @@
+/* General styles */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #f0f2f5; /* Light grey background */
+}
+
+/* Sidebar styling */
+.sidebar-panel {
+    -fx-background-color: linear-gradient(to top, #3246a3, #4a68e8); /* Degradado similar a la imagen */
+    -fx-padding: 20px 0px; /* Padding vertical */
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 10 10 20; /* Ajuste el padding para alinear con el icono */
+    -fx-background-radius: 5;
+    -fx-graphic-text-gap: 10;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-cursor: hand;
+}
+
+/* Top Bar */
+.top-bar {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E0E0E0;
+    -fx-border-width: 0 0 1px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 2); /* Sutil sombra */
+}
+
+/* Summary Boxes / Panel Cards */
+.summary-box, .panel-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e0e0e0; /* Light grey for header */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 40px;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #d0d0d0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 10 0 10 0;
+    -fx-alignment: CENTER; /* Centrar contenido de celdas */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #b0e0e6; /* Light blue on selection */
+}
+
+/* Button styles */
+.action-button {
+    -fx-background-color: #4a68e8; /* Blue */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15 8 15;
+    -fx-cursor: hand;
+}
+.action-button:hover {
+    -fx-background-color: #3246a3;
+}
+
+.action-button-secondary {
+    -fx-background-color: #6c757d; /* Gray */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15 8 15;
+    -fx-cursor: hand;
+}
+.action-button-secondary:hover {
+    -fx-background-color: #5a6268;
+}
+
+.delete-button {
+    -fx-background-color: #dc3545; /* Red */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15 8 15;
+    -fx-cursor: hand;
+}
+.delete-button:hover {
+    -fx-background-color: #c82333;
+}
+
+/* Icon Buttons (for table actions) */
+.action-button-icon {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+    -fx-background-radius: 3;
+    -fx-cursor: hand;
+}
+.action-button-icon:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* TextField / Label */
+.text-field {
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 5;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5;
+    -fx-padding: 8;
+}
+
+.label {
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #4a68e8;
+    -fx-background-color: white;
+}

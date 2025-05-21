@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.util.Callback?>
+<?import javafx.beans.property.SimpleObjectProperty?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gm.Estudiantes.ui.panels.StudentsManagementPanelController">
+    <children>
+        <VBox spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <Label text="Gestión de Estudiantes" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;"/>
+            <HBox alignment="CENTER_LEFT" spacing="20.0" styleClass="panel-card">
+                <VBox HBox.hgrow="ALWAYS">
+                    <GridPane hgap="10.0" vgap="10.0">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints vgrow="SOMETIMES" minHeight="10.0" prefHeight="30.0" />
+                            <RowConstraints vgrow="SOMETIMES" minHeight="10.0" prefHeight="30.0" />
+                        </rowConstraints>
+                        <children>
+                            <Label text="Nombre:" />
+                            <TextField fx:id="txtNombre" GridPane.columnIndex="1" styleClass="text-field" />
+                            <Label text="Apellido:" GridPane.rowIndex="1" />
+                            <TextField fx:id="txtApellido" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="text-field" />
+                            <Label text="Teléfono:" GridPane.columnIndex="2" />
+                            <TextField fx:id="txtTelefono" GridPane.columnIndex="3" styleClass="text-field" />
+                            <Label text="Email:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                            <TextField fx:id="txtEmail" GridPane.columnIndex="3" GridPane.rowIndex="1" styleClass="text-field" />
+                        </children>
+                    </GridPane>
+                    <HBox alignment="CENTER_RIGHT" spacing="10.0" VBox.vgrow="ALWAYS">
+                        <children>
+                            <Button text="Guardar/Actualizar" onAction="#guardarEstudiante" styleClass="action-button" />
+                            <Button text="Limpiar Campos" onAction="#limpiarCampos" styleClass="action-button-secondary" />
+                        </children>
+                        <padding>
+                            <Insets top="10.0" />
+                        </padding>
+                    </HBox>
+                </VBox>
+            </HBox>
+
+            <AnchorPane VBox.vgrow="ALWAYS" styleClass="panel-card">
+                <children>
+                    <TableView fx:id="estudiantesTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <columns>
+                            <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="colNombre" prefWidth="150.0" text="Nombre" />
+                            <TableColumn fx:id="colApellido" prefWidth="150.0" text="Apellido" />
+                            <TableColumn fx:id="colTelefono" prefWidth="120.0" text="Teléfono" />
+                            <TableColumn fx:id="colEmail" prefWidth="200.0" text="Email" />
+                        </columns>
+                    </TableView>
+                </children>
+            </AnchorPane>
+
+            <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="panel-card">
+                <children>
+                    <Label text="ID Estudiante:" />
+                    <TextField fx:id="txtBuscarId" prefWidth="100.0" styleClass="text-field" />
+                    <Button text="Buscar por ID" onAction="#buscarEstudiante" styleClass="action-button-secondary" />
+                    <Button text="Eliminar por ID" onAction="#eliminarEstudiante" styleClass="delete-button" />
+                </children>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
