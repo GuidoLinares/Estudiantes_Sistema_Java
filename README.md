@@ -32,21 +32,27 @@ src/
 └── main/
 ├── java/
 │ └── gm/Estudiantes/
-│ ├── modelo/ # Entidades de la base de datos (Ej: Estudiante.java)
-│ ├── repositorio/ # Interfaces de repositorio (Ej: EstudianteRepositorio.java)
-│ ├── servicio/ # Lógica de negocio (Ej: EstudianteServicio.java)
-│ └── ui/ # Controladores de la interfaz de usuario
+│ ├── modelo/
+│ ├── repositorio/
+│ ├── servicio/
+│ └── ui/
 │ └── panels/
 │ ├── StudentsManagementPanelController.java
 │ └── EstudiantesDashboardUIController.java
-│ ├── EstudiantesApplication.java # Clase principal de la aplicación
+│ ├── EstudiantesApplication.java
 │ └── JavaFxApplication.java
 ├── resources/
-│ ├── icons/ # Íconos utilizados en la UI
-│ ├── application.properties # Configuración de Spring Boot y SQL Server
-│ ├── dashboard.fxml # Diseño FXML del panel principal
+│ ├── icons/
+│ ├── application.properties
+│ ├── dashboard.fxml
 │ ├── dashboard_summary.fxml
 │ ├── students_management.fxml
-│ ├── logback-spring.xml # Configuración de logging
-│ └── style.css # Estilos CSS de la interfaz
-└── test/ # Pruebas unitarias e integración
+│ ├── logback-spring.xml
+│ └── style.css
+└── test/
+
+.gitattributes
+.gitignore
+HELP.md
+pom.xml
+README.md
