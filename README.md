@@ -2,21 +2,11 @@ Sistema de Gestión de Estudiantes
 Este proyecto es una aplicación de escritorio moderna y robusta diseñada para la gestión eficiente de información de estudiantes. Combina la potencia del backend de Spring Boot con la riqueza visual de JavaFX para ofrecer una experiencia de usuario fluida e intuitiva. Su objetivo principal es proporcionar una solución completa para las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) de los datos de los estudiantes.
 
 ✨ Características Destacadas:
-Gestión Integral de Estudiantes (CRUD):
-Añade nuevos estudiantes fácilmente.
-Visualiza una lista completa y organizada de todos los estudiantes.
-Modifica la información existente de cualquier estudiante.
-Elimina registros de estudiantes cuando sea necesario.
-Interfaz de Usuario Envolvente con JavaFX:
-Desarrollada con FXML y CSS para un diseño visual atractivo y una navegación intuitiva.
-Incluye un dashboard principal y una barra lateral que facilita el acceso a las diferentes secciones de la aplicación.
-Persistencia de Datos Robusta:
-Integración perfecta con Microsoft SQL Server como base de datos.
-Utiliza Hibernate y Spring Data JPA para un mapeo objeto-relacional (ORM) eficiente y una interacción simplificada con la base de datos.
-Arquitectura Sólida y Mantenible:
-Implementa una arquitectura en capas bien definida (UI, Servicio, Repositorio, Modelo) para promover la modularidad, facilitar el mantenimiento y asegurar la escalabilidad del código.
-Inyección de Dependencias con Spring:
-Aprovecha el contenedor de Inversión de Control (IoC) de Spring para gestionar automáticamente las dependencias entre los componentes, lo que agiliza el desarrollo y simplifica las pruebas unitarias.
+Gestión Integral de Estudiantes (CRUD): Permite añadir nuevos estudiantes, visualizar la lista completa y organizada de todos los estudiantes, modificar la información existente de cualquier estudiante y eliminar registros de estudiantes cuando sea necesario.
+Interfaz de Usuario Envolvente con JavaFX: Desarrollada con FXML y CSS para un diseño visual atractivo y una navegación intuitiva. Incluye un dashboard principal y una barra lateral que facilita el acceso a las diferentes secciones de la aplicación.
+Persistencia de Datos Robusta: Integración perfecta con Microsoft SQL Server como base de datos. Utiliza Hibernate y Spring Data JPA para un mapeo objeto-relacional (ORM) eficiente y una interacción simplificada con la base de datos.
+Arquitectura Sólida y Mantenible: Implementa una arquitectura en capas bien definida (UI, Servicio, Repositorio, Modelo) para promover la modularidad, facilitar el mantenimiento y asegurar la escalabilidad del código.
+Inyección de Dependencias con Spring: Aprovecha el contenedor de Inversión de Control (IoC) de Spring para gestionar automáticamente las dependencias entre los componentes, lo que agiliza el desarrollo y simplifica las pruebas unitarias.
 🛠️ Tecnologías Utilizadas:
 Backend:
 Spring Boot: Framework líder para el desarrollo rápido de aplicaciones Java empresariales.
