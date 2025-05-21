@@ -1,4 +1,5 @@
 Sistema de Gestión de Estudiantes
+
 Este proyecto es una aplicación de escritorio robusta diseñada para la gestión eficiente de información de estudiantes, utilizando la potencia de Spring Boot para el backend y JavaFX para una interfaz de usuario rica y moderna. Ofrece una solución completa para operaciones CRUD (Crear, Leer, Actualizar, Eliminar) de estudiantes, facilitando la administración de sus datos.
 
 Características Principales:
